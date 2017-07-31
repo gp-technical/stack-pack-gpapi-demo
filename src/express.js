@@ -23,8 +23,8 @@ const start = async () => {
       res.json(await gpapi.get(`subscription/url/${req.params.url}`))
     })
 
-    app.get('/gp/:contentmodelid/root-folders', async (req, res) => {
-      res.json(await gpapi.get(`contentmodel/${req.params.contentmodelid}/rootfolders`))
+    app.get('/gp/:contentmodelid/primary-folders', async (req, res) => {
+      res.json(await gpapi.get(`location/contentmodel/${req.params.contentmodelid}/primary-folders`))
     })
 
     app.get('/gp/folder/:folderId', async (req, res) => {

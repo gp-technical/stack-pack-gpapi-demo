@@ -9,7 +9,7 @@
         margin:20px;
       }
       pre{
-        font-family:Consolas;
+        font-family:Arial;
         white-space: pre-wrap;
         padding:10px;
         border: 1px solid gainsboro;
@@ -54,28 +54,28 @@
       <input id="i1" type="text" value="http://localhost:3001/gp/subscription/gp-ld" size="75">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i1')">
     </p>
-    <h3>Retrieve the Top Level 'root' Folders</h3>
-    <p><i>http://[domain:port]/gp/[content-model-id]/root-folders</i></p>
+    <h3>Retrieve the Top Level Primary Folders</h3>
+    <p><i>http://[domain:port]/gp/[content-model-id]/primary-folders</i></p>
     <p>
-      <input id="i2" type="text" value="http://localhost:3001/gp/5134bb27-3885-0004-9286-a5f500ef5d56/root-folders" size="75">&nbsp;
+      <input id="i2" type="text" value="http://localhost:3001/gp/5134bb27-3885-0004-9286-a5f500ef5d56/primary-folders" size="75">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i2')">
     </p>
     <h3>Retrieve a List of Child Folders for a Specified Parent Folder</h3>
     <p><i>http://[domain:port]/gp/folder/[parent-folder-id]</i></p>
     <p>
-      <input id="i3" type="text" value="http://localhost:3001/gp/folder/4d5c254c-82cb-009b-9a25-a5f500f4c718" size="75">&nbsp;
+      <input id="i3" type="text" value="http://localhost:3001/gp/folder/bea306ad-63e3-009b-afc6-a5f500ef5e90" size="75">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i3')">
     </p>
     <h3>Retrieve a List of Content Documents for a Specified Folder</h3>
     <p><i>http://[domain:port]/gp/[folder-id]/documents</i></p>
     <p>
-      <input id="i4" type="text" value="http://localhost:3001/gp/4f4face3-7e3a-009b-b493-a5f700a0fc6d/documents" size="75">&nbsp;
+      <input id="i4" type="text" value="http://localhost:3001/gp/6eda6704-a3b8-009b-8003-a5f500ef649d/documents" size="75">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i4')">
     </p>
     <h3>Retrieve a Specified Content Document</h3>
     <p><i>http://[domain:port]/gp/content/[type]/[content-document-id]</i></p>
     <p>
-      <input id="i5" type="text" value="http://localhost:3001/gp/content/article/5da6a26e-0ce9-0024-967c-a5f700de443b" size="75">&nbsp;
+      <input id="i5" type="text" value="http://localhost:3001/gp/content/article/3d63d3bc-f9f6-0024-b593-a5f500ef64bd" size="75">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i5')">
     </p>
     <hr/>
