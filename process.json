@@ -1,0 +1,11 @@
+{
+  "apps": [{
+    "script": "index.js",
+    "name": "stack-demo",
+    "watch": "index.js",
+    "ignore_watch": ["node_modules", "*.log"],
+    "watch_options": {
+      "followSymlinks": false
+    }
+  }]
+}
