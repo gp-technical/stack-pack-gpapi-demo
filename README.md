@@ -15,7 +15,7 @@ Of course the main GoodPractice API supports many more features than this demo s
 ## Environment Variables
 To use the demo you will need to create and populate a `.env` file and place it in the root of the demo application.
 
-![location of .env file](https://postimg.org/image/6t20yk1dl/)
+![location of .env file](https://s4.postimg.org/4bq9rahh9/stack-pack-gpapi-demo_env_file_location.png)
 
 Once you have this empty file you need to fill it with your environment variables. Here are the values you need
 
