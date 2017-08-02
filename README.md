@@ -30,7 +30,7 @@ API_PORT=3001
 API_ROOT=http://localhost:3001
 
 # GP-API
-GP_API_URL=https://api.staging.goodpractice.net/
+GP_API_URL=https://api.staging.goodpractice.net
 GP_API_PUBLIC=[request this key from GoodPractice]
 GP_API_SECRET=[request this key from GoodPractice]
 ```
