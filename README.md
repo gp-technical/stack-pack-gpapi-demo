@@ -6,15 +6,15 @@ The main GoodPractice API is a fully secured RESTful API that gives client _secu
 
 The problem is the security. It is quite tricky to perform the security handshake and get the token you need to call any of the main GoodPractice API end-points.
 
-It is for this reason that the GPAPI package has been written. You can find the source of the module here [stack-pack-gpapi(https://github.com/gp-technical/stack-pack-gpapi)
+It is for this reason that the GPAPI package has been written. You can find the source of the module here [stack-pack-gpapi](https://github.com/gp-technical/stack-pack-gpapi)
 
 The GPAPI package is a helper module that greatly simplifies the security handshake process and then any subsequent access to the main GoodPractice API endpoints leaving you free to just pick and use the end-points that you need without worrying about encryption or identity-tokens.
 
 This demo app is intended to get you started using the GPAPI helper package. It defines its own simple façade API with a few choice example end-points that will have you listing and displaying GoodPractice content in just a few minutes. These demo API end-points each use the GPAPI package to call out to the main GoodPractice API and return the results.
 
-Use this demo to test out each of the example end-points, they can be individually called and the resulting JSON is displayed. If you request a content (article) then the HTML is aslo displayed with some simple formatting.
+Use this demo to test out each of the example end-points, they can be individually called and the resulting JSON is displayed. If you request a content (article) then the HTML is also displayed with some simple formatting.
 
-Of course the main GoodPractice API supports many more features than this demo shows. You can see the complete documentation here (GoodPractice API Full Documentation)[http://docs.goodpracticeapi.apiary.io/]
+Of course the main GoodPractice API supports many more features than this demo shows. You can see the complete documentation here [GoodPractice API Full Documentation](http://docs.goodpracticeapi.apiary.io/)
 
 ## Environment Variables
 To use the demo you will need to create and populate a `.env` file and place it in the root of the demo application.
