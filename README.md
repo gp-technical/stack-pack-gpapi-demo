@@ -4,7 +4,11 @@
 ## Introduction
 The main GoodPractice API is a fully secured RESTful API that gives client _secure_ access to the structure, features and content of any Subscription for which they have access
 
-The problem is the security. It is quite tricky to perform the security handshake and get the token you need to call any of the main GoodPractice API end-points. It is for this reason that the GPAPI package has been written. It is a helper module that greatly simplifies the security handshake process and then any subsequent access to the main GoodPractice API endpoints leaving you free to just pick and use the end-points that you need without worrying about encryption or identity-tokens.
+The problem is the security. It is quite tricky to perform the security handshake and get the token you need to call any of the main GoodPractice API end-points.
+
+It is for this reason that the GPAPI package has been written. You can find the source of the module here (stack-pack-gpapi)[https://github.com/gp-technical/stack-pack-gpapi]
+
+The GPAPI package is a helper module that greatly simplifies the security handshake process and then any subsequent access to the main GoodPractice API endpoints leaving you free to just pick and use the end-points that you need without worrying about encryption or identity-tokens.
 
 This demo app is intended to get you started using the GPAPI helper package. It defines its own simple façade API with a few choice example end-points that will have you listing and displaying GoodPractice content in just a few minutes. These demo API end-points each use the GPAPI package to call out to the main GoodPractice API and return the results.
 
