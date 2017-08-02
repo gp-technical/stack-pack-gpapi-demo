@@ -6,7 +6,7 @@ The main GoodPractice API is a fully secured RESTful API that gives client _secu
 
 The problem is the security. It is quite tricky to perform the security handshake and get the token you need to call any of the main GoodPractice API end-points.
 
-It is for this reason that the GPAPI package has been written. You can find the source of the module here (stack-pack-gpapi)[https://github.com/gp-technical/stack-pack-gpapi]
+It is for this reason that the GPAPI package has been written. You can find the source of the module here [stack-pack-gpapi(https://github.com/gp-technical/stack-pack-gpapi)
 
 The GPAPI package is a helper module that greatly simplifies the security handshake process and then any subsequent access to the main GoodPractice API endpoints leaving you free to just pick and use the end-points that you need without worrying about encryption or identity-tokens.
 
