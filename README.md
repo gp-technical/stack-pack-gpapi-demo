@@ -2,7 +2,7 @@
 ### _Get started with the GoodPractice API using this introductory demo application._
 
 ## Introduction
-The main GoodPractice API (GP-API) is a comprehensive RESTful API that gives registered clients highly _secure_ access to almost all of the features GoodPractice use internally to create and present our award winning content for Leaders and Managers.
+The main GoodPractice API (GP-API) is a comprehensive RESTful API that gives registered clients highly _secure_ access to almost all of the features we at GoodPractice use internally to create and present our award-winning content for Leaders and Managers.
 
 Giving clients access to the GP-API is a great idea but the big hurdle is the security. It is, frankly, a tricky thing to perform the security handshake when you are completely new to the GP-API and of course, it is always the _first_ thing that must be done before getting access to the GP-API features.
 
