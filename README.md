@@ -10,7 +10,7 @@ To help out our clients we have created two ways to get started that provide a g
 
 Once you have some experience with the GP-API using the [GP-API Documentation](http://docs.goodpracticeapi.apiary.io/) you can move onto building a real, secure app using the GP-API. This is where the [stack-pack-gpapi](https://github.com/gp-technical/stack-pack-gpapi) module comes in. This package is a helper module that greatly simplifies the security handshake process and then any subsequent access to the main GP-API endpoints leaving you free to just pick and use the end-points that you need without worrying about encryption or identity-tokens.
 
-This demo app is intended to get you started using the `stack-pack-gpapi` helper package. It defines its own simple façade API with a few example end-points that will have you listing and displaying GoodPractice content in just a few minutes. These demo API end-points each use the `stack-pack-gpapi` package to call out to the main GP-API and return the results.
+This demo app is intended to get you started using the [stack-pack-gpapi](https://github.com/gp-technical/stack-pack-gpapi) helper package. It defines its own simple façade API with a few example end-points that will have you listing and displaying GoodPractice content in just a few minutes. These demo API end-points each use the [stack-pack-gpapi](https://github.com/gp-technical/stack-pack-gpapi) package to call out to the main GP-API and return the results.
 
 Use this demo to test out each of the example end-points, they can be individually called and the resulting JSON is displayed. If you request content (article) then the HTML is also displayed with some simple formatting.
 
