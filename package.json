@@ -11,8 +11,7 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "start": "env-cmd .env babel-node src/index.js --silent",
-    "production": "babel --presets latest,stage-2 src --out-dir /build"
+    "start": "env-cmd .env babel-node src/index.js --silent"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
