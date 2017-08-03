@@ -42,17 +42,17 @@ Don't forget to install all the package dependencies. You can do this by issuing
 ### Running The Demo
 
 #### Starting Up
-To start the demo you need to run the `start` script contained in the `package.json` file. You can do this by issuing the `npm start` command. This will cause the script to run and demo api to start. You shoudl also see CLI output that indicates the demo has successfully connected to the GP-API (staging version).
+To start the demo you need to run the `start` script contained in the `package.json` file. You can do this by issuing the `npm start` command. This will cause the script to run and demo api to start. You should also see CLI output that indicates the demo has successfully connected to the GP-API (staging version).
 
-![npm start - CLI output](https://s3.postimg.org/vmj2jqs03/stack-pack-gpapi-demo_start_cli_output.png)
+![npm start - CLI output](https://s1.postimg.org/3px7u7n1b/stack-pack-gpapi-demo_start_cli_output.png)
 
 #### Startup Notes
 * The `stack-pack-gpapi-demo` api is listening at `http://localhost:3001`
 * There is an automatic GP-API health check at start up that shows everything is working (the `api-key` shown here is the *public* key so its fine to display it)
-* The `stack-pack-gpapi-demo` has been successfully authenticated via the stack-pack-gpapi package handshake. The application's security token is displayed.
+* The `stack-pack-gpapi-demo` has been successfully authenticated via the [stack-pack-gpapi](https://github.com/gp-technical/stack-pack-gpapi) package handshake. The application's security token is displayed.
 
 #### Running The Browser
 
 To see the demo UI you just need to put the root url of the `stack-pack-gpapi-demo` api into the browser bar, in this case `http://localhost:3001`
 
-![browser UI](https://s2.postimg.org/aeootptrd/stack-pack-gpapi-demo_browser.png)
+![browser UI](https://s4.postimg.org/tcphy8nzh/stack-pack-gpapi-demo_browser.png)
