@@ -31,14 +31,16 @@ const start = async () => {
       res.json(await gpapi.get(`location/parent-folder/${req.params.folderId}/child-folders`))
     })
 
-    app.get('/gp/:folderId/documents', async (req, res) => {
+    app.get('/gp/:folderId/items', async (req, res) => {
       res.json(await gpapi.get(`folder/${req.params.folderId}/items/simple`))
     })
 
     app.get('/gp/content/:type/:id', async (req, res) => {
       res.json(await gpapi.get(`contentitem/${req.params.type}/${req.params.id}`))
     })
-
+    app.get('/gp/contentmodel/:id/search', async (req, res) => {
+      res.json(await gpapi.get(`contentmodel/${req.params.id}/search?terms=${req.query.terms}`))
+    })
     await app.listen(process.env.API_PORT)
     winston.info(`Express server started. The ${process.env.API_NAME} API is listening at ${process.env.API_ROOT}`)
 

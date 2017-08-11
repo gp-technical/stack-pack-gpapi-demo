@@ -66,17 +66,23 @@
       <input id="i3" type="text" value="http://localhost:3001/gp/folder/bea306ad-63e3-009b-afc6-a5f500ef5e90" size="75">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i3')">
     </p>
-    <h3>Retrieve a List of Content Documents for a Specified Folder</h3>
+    <h3>Retrieve a List of Content Items for a Specified Folder</h3>
     <p><i>http://[domain:port]/gp/[folder-id]/documents</i></p>
     <p>
-      <input id="i4" type="text" value="http://localhost:3001/gp/6eda6704-a3b8-009b-8003-a5f500ef649d/documents" size="75">&nbsp;
+      <input id="i4" type="text" value="http://localhost:3001/gp/6eda6704-a3b8-009b-8003-a5f500ef649d/items" size="75">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i4')">
     </p>
-    <h3>Retrieve a Specified Content Document</h3>
-    <p><i>http://[domain:port]/gp/content/[type]/[content-document-id]</i></p>
+    <h3>Retrieve a Specified Content Item</h3>
+    <p><i>http://[domain:port]/gp/content/[type]/[content-item-id]</i></p>
     <p>
       <input id="i5" type="text" value="http://localhost:3001/gp/content/article/3d63d3bc-f9f6-0024-b593-a5f500ef64bd" size="75">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i5')">
+    </p>
+    <h3>Search The Toolkit</h3>
+    <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/search?terms=[search-terms]</i></p>
+    <p>
+      <input id="i6" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/search?terms=difficult%20conversations" size="75">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i6')">
     </p>
     <hr/>
     <h1>Results</h1>
