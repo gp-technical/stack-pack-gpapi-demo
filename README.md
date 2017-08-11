@@ -54,5 +54,3 @@ To start the demo you need to run the `start` script contained in the `package.j
 #### Running The Browser
 
 To see the demo UI you just need to put the root url of the `stack-pack-gpapi-demo` api into the browser bar, in this case `http://localhost:3001`
-
-![browser UI](https://s4.postimg.org/tcphy8nzh/stack-pack-gpapi-demo_browser.png)
