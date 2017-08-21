@@ -54,8 +54,9 @@ To start the demo you need to run the `start` script contained in the `package.j
 
 #### Startup Notes
 * The `stack-pack-gpapi-demo` api is listening at `http://localhost:3001`
-* There is an automatic GP-API health check at start up that shows everything is working (the `api-key` shown here is the *public* key so its fine to display it)
-* The `stack-pack-gpapi-demo` has been successfully authenticated via the [stack-pack-gpapi](https://github.com/gp-technical/stack-pack-gpapi) package handshake. The application's security token is displayed.
+* There is an automatic GP-API health check at start up that shows everything is working
+* The `stack-pack-gpapi-demo` has been successfully authenticated itself as a registered application. The application's security token is displayed.
+* The `stack-pack-gpapi-demo` has been successfully authenticated itself as a user. The user token is displayed.
 
 #### Running The Browser
 
