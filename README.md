@@ -10,7 +10,7 @@ npm install stack-pack-gpapi --save
 ## Introduction
 The main GoodPractice API (GP-API) is a comprehensive RESTful API that gives registered clients highly _secure_ access to almost all of the features we at GoodPractice use internally to create and present our award-winning content for Leaders and Managers.
 
-Giving clients access to the GP-API is a great idea but the big hurdle is the security. It is, frankly, a tricky thing to perform the security handshake, especially when you are completely new to the GP-API. And of course, it is always the _first_ thing that must be done before getting access to the GP-API features.
+Giving clients access to the GP-API is a great idea but the big hurdle is the security. It is typically tricky to perform the security handshake, especially when you are completely new to the GP-API. And of course, it is always the _first_ thing that must be done before getting access to the GP-API features.
 
 ## Getting Started
 To help soothe this pain we have created two ways to get started that together help provide a gentle slope-to-success. The first is our full [GP-API Documentation](http://docs.goodpracticeapi.apiary.io/). This is _smart documentation_ that allows you to review the workings of the GP-API and _safely_ try out each endpoint via a built in mock-server. The mock server returns static mock data whenever an end-point is called. In this way you can experiment and learn without any security headaches.
