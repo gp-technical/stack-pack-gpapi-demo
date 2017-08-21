@@ -52,6 +52,7 @@ To start the demo you need to run the `start` script contained in the `package.j
 
 ![npm start - CLI output](https://s1.postimg.org/3px7u7n1b/stack-pack-gpapi-demo_start_cli_output.png)
 
+[![stack-pack-gpapi-demo_start_cli_output.png](https://s27.postimg.org/sx6aucwkj/stack-pack-gpapi-demo_start_cli_output.png)](https://postimg.org/image/kewuq0q1r/)
 #### Startup Notes
 * The `stack-pack-gpapi-demo` api is listening at `http://localhost:3001`
 * There is an automatic GP-API health check at start up that shows everything is working (the `api-key` shown here is the *public* key so its fine to display it)
