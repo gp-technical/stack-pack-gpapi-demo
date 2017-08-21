@@ -1,5 +1,7 @@
-# stack-pack-gpapi-demo
+# stack-pack-gpapi demo
 ### _Get started with the GoodPractice API using this introductory demo application._
+
+This application demonstrates the use of the `stack-pack-gpapi` module. This module is available as a [github repo](https://github.com/gp-technical/stack-pack-gpapi) and a public [npm package](https://www.npmjs.com/package/stack-pack-gpapi)
 
 ```
 npm install stack-pack-gpapi --save
