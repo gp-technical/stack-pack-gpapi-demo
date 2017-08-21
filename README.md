@@ -1,6 +1,10 @@
 # stack-pack-gpapi-demo
 ### _Get started with the GoodPractice API using this introductory demo application._
 
+```
+npm install stack-pack-gpapi --save
+```
+
 ## Introduction
 The main GoodPractice API (GP-API) is a comprehensive RESTful API that gives registered clients highly _secure_ access to almost all of the features we at GoodPractice use internally to create and present our award-winning content for Leaders and Managers.
 
