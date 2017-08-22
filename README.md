@@ -25,7 +25,7 @@ Use this demo to test out each of the example end-points, they can be individual
 Of course the main  GP-API supports many more features than this demo shows. Please see the [GP-API Documentation](http://docs.goodpracticeapi.apiary.io/) for more details.
 
 ### Registering Your Application
-The [stack-pack-gpapi](https://github.com/gp-technical/stack-pack-gpapi) helper package is only intended for clients of GoodPractice Ltd in order to make accessing the GP-API easier. Before using the package you must first request a `public-key` and a `secret-key`, and provide these as environment variables (see below), in order to gain access to the API. You can request these keys by contacting GoodPractice support or speaking to your GoodPractice client representative.
+The [stack-pack-gpapi](https://github.com/gp-technical/stack-pack-gpapi) helper package is only intended for use by legitimate clients of GoodPractice in order to make accessing the GP-API easier. Before using the package you must first request a `public-key` and a `secret-key`, and provide these as environment variables (see below), in order to gain access to the API. You can request these keys by contacting GoodPractice support or speaking to your GoodPractice client representative.
 
 ### Environment Variables
 To use the demo you will need to create and populate a `.env` file and place it in the root of the demo application.
