@@ -53,7 +53,7 @@ Don't forget to install all the package dependencies. You can do this by issuing
 #### Starting Up
 To start the demo you need to run the `start` script contained in the `package.json` file. You can do this by issuing the `npm start` command. This will cause the script to run and demo api to start. You should also see CLI output that indicates the demo has successfully connected to the GP-API (staging version).
 
-[![stack-pack-gpapi-demo_start_cli_output.png](https://s27.postimg.org/slouhlg4j/stack-pack-gpapi-demo_start_cli_output.png)](https://postimg.org/image/hm3n5zppb/)
+[![stack-pack-gpapi-demo_start_cli_output.png](https://s27.postimg.org/gd7yezxsz/stack-pack-gpapi-demo_start_cli_output.png)](https://postimg.org/image/wbgo54s0v/)
 
 #### Startup Notes
 * The `stack-pack-gpapi-demo` application is running at `http://localhost:3001`
