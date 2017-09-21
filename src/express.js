@@ -38,9 +38,11 @@ const start = async () => {
     app.get('/gp/content/:type/:id', async (req, res) => {
       res.json(await gpapi.get(`contentitem/${req.params.type}/${req.params.id}`))
     })
+
     app.get('/gp/contentmodel/:id/search', async (req, res) => {
       res.json(await gpapi.get(`contentmodel/${req.params.id}/search?terms=${req.query.terms}`))
     })
+
     await app.listen(process.env.API_PORT)
     winston.info(`Express server started. The ${process.env.API_NAME} API is listening at ${process.env.API_ROOT}`)
 
@@ -52,4 +54,4 @@ const start = async () => {
   }
 }
 
-export default { start}
+export default { start }
