@@ -19,10 +19,13 @@ const start = async () => {
       res.send(`The ${process.env.API_NAME} api is running : ${new Date().toLocaleString('en-GB')}`)
     })
 
+    app.get('/gp/branding/:id', async (req, res) => {
+      res.json(await gpapi.get(`branding/${req.params.id}`))
+    })
+
     app.get('/gp/subscription/:url', async (req, res) => {
       res.json(await gpapi.get(`subscription/url/${req.params.url}`))
     })
-
     app.get('/gp/:contentmodelid/primary-folders', async (req, res) => {
       res.json(await gpapi.get(`location/contentmodel/${req.params.contentmodelid}/primary-folders`))
     })

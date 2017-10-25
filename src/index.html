@@ -17,28 +17,27 @@
       }
     </style>
     <script>
-
-      function fetchJson(id){
-        var resultJSON = document.getElementById("resultJSON")
-        var resultHTML = document.getElementById("resultHTML")
-        var panelHTML = document.getElementById("panelHTML")
-        var url = document.getElementById(id).value
-        fetch(url)
-        .then(function(response){return response.json()})
-        .then(function(json){
-
-          if(json.Body){
-            panelHTML.style.display = "block"
-            resultHTML.innerHTML="<h1 style='text-align:center'>" + json.Name + "</h1>" + json.Body
-            json.Body="<b>DEMO NOTE: For clarity the Body HTML text normally found here has been removed and is instead displayed below</b>"
-          }else{
-            panelHTML.style.display = "none"
-          }
-          resultJSON.innerHTML=JSON.stringify(json, null, "    ")
-        })
+function fetchJson(id) {
+  var resultJSON = document.getElementById('resultJSON')
+  var resultHTML = document.getElementById('resultHTML')
+  var panelHTML = document.getElementById('panelHTML')
+  var url = document.getElementById(id).value
+  fetch(url)
+    .then(function(response) {
+      return response.json()
+    })
+    .then(function(json) {
+      if (json.Body) {
+        panelHTML.style.display = 'block'
+        resultHTML.innerHTML = "<h1 style='text-align:center'>" + json.Name + '</h1>' + json.Body
+        json.Body = '<b>DEMO NOTE: For clarity the Body HTML text normally found here has been removed and is instead displayed below</b>'
+      } else {
+        panelHTML.style.display = 'none'
       }
-
-    </script>
+      resultJSON.innerHTML = JSON.stringify(json, null, '    ')
+    })
+}
+</script>
 	</head>
 	<body>
     <h1>The GP-API Quick Demo</h1>
@@ -59,38 +58,44 @@
     <h3>Retrieve Subscription Details</h3>
     <p><i>http://[domain:port]/gp/subscription/[subscription-url]</i></p>
     <p>
-      <input id="i1" type="text" value="http://localhost:3001/gp/subscription/gp-ld" size="100">&nbsp;
+      <input id="i1" type="text" value="http://localhost:3001/gp/subscription/gp-ld" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i1')">
+    </p>
+    <h3>Retrieve The Branding CSS For a subscription</h3>
+    <p><i>http://[domain:port]/gp/branding/[branding-id]</i></p>
+    <p>
+      <input id="i2" type="text" value="http://localhost:3001/gp/branding/3fc6f0a3-9e8e-0021-92cb-a5f500f4761d" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i2')">
     </p>
     <h3>Retrieve the Top Level Primary Folders</h3>
     <p><i>http://[domain:port]/gp/[content-model-id]/primary-folders</i></p>
     <p>
-      <input id="i2" type="text" value="http://localhost:3001/gp/5134bb27-3885-0004-9286-a5f500ef5d56/primary-folders" size="100">&nbsp;
-      <input type="button" value="fetch" onclick="fetchJson('i2')">
+      <input id="i3" type="text" value="http://localhost:3001/gp/5134bb27-3885-0004-9286-a5f500ef5d56/primary-folders" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i3')">
     </p>
     <h3>Retrieve a List of Child Folders for a Specified Parent Folder</h3>
     <p><i>http://[domain:port]/gp/folder/[parent-folder-id]</i></p>
     <p>
-      <input id="i3" type="text" value="http://localhost:3001/gp/folder/bea306ad-63e3-009b-afc6-a5f500ef5e90" size="100">&nbsp;
-      <input type="button" value="fetch" onclick="fetchJson('i3')">
+      <input id="i4" type="text" value="http://localhost:3001/gp/folder/bea306ad-63e3-009b-afc6-a5f500ef5e90" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i4')">
     </p>
     <h3>Retrieve a List of Content Items for a Specified Folder</h3>
     <p><i>http://[domain:port]/gp/[folder-id]/documents</i></p>
     <p>
-      <input id="i4" type="text" value="http://localhost:3001/gp/6eda6704-a3b8-009b-8003-a5f500ef649d/items" size="100">&nbsp;
-      <input type="button" value="fetch" onclick="fetchJson('i4')">
+      <input id="i5" type="text" value="http://localhost:3001/gp/6eda6704-a3b8-009b-8003-a5f500ef649d/items" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i5')">
     </p>
     <h3>Retrieve a Specified Content Item</h3>
     <p><i>http://[domain:port]/gp/content/[type]/[content-item-id]</i></p>
     <p>
-      <input id="i5" type="text" value="http://localhost:3001/gp/content/article/3d63d3bc-f9f6-0024-b593-a5f500ef64bd" size="100">&nbsp;
-      <input type="button" value="fetch" onclick="fetchJson('i5')">
+      <input id="i6" type="text" value="http://localhost:3001/gp/content/article/3d63d3bc-f9f6-0024-b593-a5f500ef64bd" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i6')">
     </p>
     <h3>Search The Toolkit</h3>
     <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/search?terms=[search-terms]</i></p>
     <p>
-      <input id="i6" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/search?terms=difficult%20conversations" size="100">&nbsp;
-      <input type="button" value="fetch" onclick="fetchJson('i6')">
+      <input id="i7" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/search?terms=difficult%20conversations" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i7')">
     </p>
     <hr/>
     <h1>Results</h1>
