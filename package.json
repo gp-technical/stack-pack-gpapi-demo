@@ -13,6 +13,16 @@
   "scripts": {
     "start": "env-cmd .env babel-node src/index.js --silent"
   },
+  "swapDep": {
+    "local": {
+      "dep": {},
+      "dev": {}
+    },
+    "published": {
+      "dep": {},
+      "dev": {}
+    }
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "dotenv": "^4.0.0",
