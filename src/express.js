@@ -43,6 +43,10 @@ const start = async () => {
       res.json(await gpapi.get(`contentitem/${req.params.type}/${req.params.id}`))
     })
 
+    app.get('/gp/:subscriptionId/content/:type/:id', async (req, res) => {
+      res.json(await gpapi.get(`contentitem/${req.params.subscriptionId}/${req.params.type}/${req.params.id}`))
+    })
+
     app.get('/gp/contentmodel/:id/topical', async (req, res) => {
       res.json(await gpapi.get(`contentmodel/${req.params.id}/most-read`))
     })
