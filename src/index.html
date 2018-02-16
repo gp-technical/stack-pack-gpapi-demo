@@ -16,7 +16,7 @@
         background-color: whitesmoke;
       }
     </style>
-    <script>
+<script>
 function fetchJson(id) {
   var resultJSON = document.getElementById('resultJSON')
   var resultHTML = document.getElementById('resultHTML')
@@ -91,11 +91,33 @@ function fetchJson(id) {
       <input id="i6" type="text" value="http://localhost:3001/gp/content/article/3d63d3bc-f9f6-0024-b593-a5f500ef64bd" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('i6')">
     </p>
+
+    <h3>Retrieve the <i>Topical Content</i> Items</h3>
+    <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/topical</i></p>
+    <p>
+      <input id="i7" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/topical" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i7')">
+    </p>
+
+    <h3>Retrieve the <i>Most Read</i> Items</h3>
+    <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/most-read</i></p>
+    <p>
+      <input id="i8" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/most-read" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i8')">
+    </p>
+
+    <h3>Retrieve the <i>Most Recommended</i> Items</h3>
+    <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/most-recommended</i></p>
+    <p>
+      <input id="i9" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/most-recommended" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i9')">
+    </p>
+
     <h3>Search The Toolkit</h3>
     <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/search?terms=[search-terms]</i></p>
     <p>
-      <input id="i7" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/search?terms=difficult%20conversations" size="120">&nbsp;
-      <input type="button" value="fetch" onclick="fetchJson('i7')">
+      <input id="i10" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/search?terms=difficult%20conversations" size="120">&nbsp;
+      <input type="button" value="fetch" onclick="fetchJson('i10')">
     </p>
     <hr/>
     <h1>Results</h1>

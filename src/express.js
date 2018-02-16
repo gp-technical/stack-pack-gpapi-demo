@@ -26,6 +26,7 @@ const start = async () => {
     app.get('/gp/subscription/:url', async (req, res) => {
       res.json(await gpapi.get(`subscription/url/${req.params.url}`))
     })
+
     app.get('/gp/:contentmodelid/primary-folders', async (req, res) => {
       res.json(await gpapi.get(`location/contentmodel/${req.params.contentmodelid}/primary-folders`))
     })
@@ -40,6 +41,18 @@ const start = async () => {
 
     app.get('/gp/content/:type/:id', async (req, res) => {
       res.json(await gpapi.get(`contentitem/${req.params.type}/${req.params.id}`))
+    })
+
+    app.get('/gp/contentmodel/:id/topical', async (req, res) => {
+      res.json(await gpapi.get(`contentmodel/${req.params.id}/most-read`))
+    })
+
+    app.get('/gp/contentmodel/:id/most-read', async (req, res) => {
+      res.json(await gpapi.get(`contentmodel/${req.params.id}/most-read`))
+    })
+
+    app.get('/gp/contentmodel/:id/most-recommended', async (req, res) => {
+      res.json(await gpapi.get(`contentmodel/${req.params.id}/most-recommended`))
     })
 
     app.get('/gp/contentmodel/:id/search', async (req, res) => {

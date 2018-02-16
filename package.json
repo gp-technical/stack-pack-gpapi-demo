@@ -15,11 +15,15 @@
   },
   "swapDep": {
     "local": {
-      "dep": {},
+      "dep": {
+        "stack-pack-gpapi": "file:../../stack-pack/stack-pack-gpapi"
+      },
       "dev": {}
     },
     "published": {
-      "dep": {},
+      "dep": {
+        "stack-pack-gpapi": "1.1.7"
+      },
       "dev": {}
     }
   },
