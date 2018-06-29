@@ -77,8 +77,10 @@ To see the demo UI you just need to put the root url of the `stack-pack-gpapi-de
 
 ## Screenshots
 
-### Test Demo Endpoints
+### All Demo Endpoints
 
-[test_demo_endpoints.png](https://postimg.cc/image/gp7rrizid/)
+[test_demo_endpoints.png](https://postimg.cc/image/v9oulwcc5/)
 
 ### Example Result JSON
+
+[test_results_json.png](https://postimg.cc/image/a018b48x1/)
