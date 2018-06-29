@@ -56,76 +56,75 @@ function fetchJson(id) {
     <hr/>
     <h1>Test the Demo EndPoints</h1>
     <h3>Retrieve Subscription Details</h3>
-    <p><i>http://[domain:port]/gp/subscription/[subscription-url]</i></p>
+    <p><i>http://[domain:port]/subscription/[subscription-url]</i></p>
     <p>
-      <input id="subscription" type="text" value="http://localhost:3001/gp/subscription/gp-ld" size="120">&nbsp;
+      <input id="subscription" type="text" value="http://localhost:3001/subscription/gp-ld" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('subscription')">
     </p>
     <h3>Retrieve The Branding CSS For a subscription</h3>
-    <p><i>http://[domain:port]/gp/branding/[branding-id]</i></p>
+    <p><i>http://[domain:port]/branding/[branding-id]</i></p>
     <p>
-      <input id="branding" type="text" value="http://localhost:3001/gp/branding/3fc6f0a3-9e8e-0021-92cb-a5f500f4761d" size="120">&nbsp;
+      <input id="branding" type="text" value="http://localhost:3001/branding/3fc6f0a3-9e8e-0021-92cb-a5f500f4761d" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('branding')">
     </p>
     <h3>Retrieve the Top Level Primary Folders</h3>
-    <p><i>http://[domain:port]/gp/[content-model-id]/primary-folders</i></p>
+    <p><i>http://[domain:port]/[content-model-id]/primary-folders</i></p>
     <p>
-      <input id="primary" type="text" value="http://localhost:3001/gp/5134bb27-3885-0004-9286-a5f500ef5d56/primary-folders" size="120">&nbsp;
+      <input id="primary" type="text" value="http://localhost:3001/5134bb27-3885-0004-9286-a5f500ef5d56/primary-folders" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('primary')">
     </p>
     <h3>Retrieve a List of Child Folders for a Specified Parent Folder</h3>
-    <p><i>http://[domain:port]/gp/folder/[parent-folder-id]</i></p>
+    <p><i>http://[domain:port]/folder/[parent-folder-id]</i></p>
     <p>
-      <input id="children" type="text" value="http://localhost:3001/gp/folder/bea306ad-63e3-009b-afc6-a5f500ef5e90" size="120">&nbsp;
+      <input id="children" type="text" value="http://localhost:3001/folder/bea306ad-63e3-009b-afc6-a5f500ef5e90" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('children')">
     </p>
     <h3>Retrieve a List of Content Items for a Specified Folder</h3>
-    <p><i>http://[domain:port]/gp/[folder-id]/documents</i></p>
+    <p><i>http://[domain:port]/[folder-id]/documents</i></p>
     <p>
-      <input id="items" type="text" value="http://localhost:3001/gp/6eda6704-a3b8-009b-8003-a5f500ef649d/items" size="120">&nbsp;
+      <input id="items" type="text" value="http://localhost:3001/6eda6704-a3b8-009b-8003-a5f500ef649d/items" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('items')">
     </p>
 
     <h3>Retrieve a Specified Content Item</h3>
-    <p><i>http://[domain:port]/gp/content/[type]/[content-item-id]</i></p>
+    <p><i>http://[domain:port]/content/[type]/[content-item-id]</i></p>
     <p>
-      <input id="item" type="text" value="http://localhost:3001/gp/content/article/3d63d3bc-f9f6-0024-b593-a5f500ef64bd" size="120">&nbsp;
+      <input id="item" type="text" value="http://localhost:3001/content/article/3d63d3bc-f9f6-0024-b593-a5f500ef64bd" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('item')">
     </p>
 
     <h3>Retrieve a Specified Content Item - With URL to Toolkit Location</h3>
-    <p><i>http://[domain:port]/gp/subscriptionId/content/[type]/[content-item-id]</i></p>
+    <p><i>http://[domain:port]/subscriptionId/content/[type]/[content-item-id]</i></p>
     <p>
-      <input id="url" type="text" value="http://localhost:3001/gp/e99ea938-125d-004d-9e35-a5f500f47255/content/article/3d63d3bc-f9f6-0024-b593-a5f500ef64bd" size="120">&nbsp;
+      <input id="url" type="text" value="http://localhost:3001/e99ea938-125d-004d-9e35-a5f500f47255/content/article/3d63d3bc-f9f6-0024-b593-a5f500ef64bd" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('url')">
     </p>
 
-
     <h3>Retrieve the <i>Topical Content</i> Items</h3>
-    <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/topical</i></p>
+    <p><i>http://[domain:port]/contentmodel/[content-model-id]/topical</i></p>
     <p>
-      <input id="topical" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/topical" size="120">&nbsp;
+      <input id="topical" type="text" value="http://localhost:3001/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/topical" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('topical')">
     </p>
 
     <h3>Retrieve the <i>Most Read</i> Items</h3>
-    <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/most-read</i></p>
+    <p><i>http://[domain:port]/contentmodel/[content-model-id]/most-read</i></p>
     <p>
-      <input id="read" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/most-read" size="120">&nbsp;
+      <input id="read" type="text" value="http://localhost:3001/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/most-read" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('read')">
     </p>
 
     <h3>Retrieve the <i>Most Recommended</i> Items</h3>
-    <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/most-recommended</i></p>
+    <p><i>http://[domain:port]/contentmodel/[content-model-id]/most-recommended</i></p>
     <p>
-      <input id="recommended" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/most-recommended" size="120">&nbsp;
+      <input id="recommended" type="text" value="http://localhost:3001/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/most-recommended" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('recommended')">
     </p>
 
     <h3>Search The Toolkit</h3>
-    <p><i>http://[domain:port]/gp/contentmodel/[content-model-id]/search?terms=[search-terms]</i></p>
+    <p><i>http://[domain:port]/contentmodel/[content-model-id]/search?terms=[search-terms]</i></p>
     <p>
-      <input id="search" type="text" value="http://localhost:3001/gp/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/search?terms=difficult%20conversations" size="120">&nbsp;
+      <input id="search" type="text" value="http://localhost:3001/contentmodel/5134bb27-3885-0004-9286-a5f500ef5d56/search?terms=difficult%20conversations" size="120">&nbsp;
       <input type="button" value="fetch" onclick="fetchJson('search')">
     </p>
     <hr/>
