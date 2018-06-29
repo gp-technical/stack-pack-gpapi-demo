@@ -31,7 +31,7 @@
     "body-parser": "^1.15.2",
     "dotenv": "^4.0.0",
     "express": "^4.13.4",
-    "stack-pack-gpapi": "1.1.7",
+    "stack-pack-gpapi": "file:../../stack-pack/stack-pack-gpapi",
     "winston": "^2.3.1"
   },
   "devDependencies": {
