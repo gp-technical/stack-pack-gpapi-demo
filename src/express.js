@@ -2,6 +2,7 @@ import gpapi from 'stack-pack-gpapi'
 import bodyParser from 'body-parser'
 import winston from 'winston'
 import server from 'express'
+import path from 'path'
 import util from 'util'
 
 const start = async () => {
@@ -28,7 +29,9 @@ const start = async () => {
     })
 
     app.get('/:contentmodelid/primary-folders', async (req, res) => {
-      res.json(await gpapi.get(`location/contentmodel/${req.params.contentmodelid}/primary-folders`))
+      res.json(
+        await gpapi.get(`location/contentmodel/${req.params.contentmodelid}/primary-folders`)
+      )
     })
 
     app.get('/folder/:folderId', async (req, res) => {
@@ -44,7 +47,11 @@ const start = async () => {
     })
 
     app.get('/:subscriptionId/content/:type/:id', async (req, res) => {
-      res.json(await gpapi.get(`contentitem/${req.params.subscriptionId}/${req.params.type}/${req.params.id}`))
+      res.json(
+        await gpapi.get(
+          `contentitem/${req.params.subscriptionId}/${req.params.type}/${req.params.id}`
+        )
+      )
     })
 
     app.get('/contentmodel/:id/topical', async (req, res) => {
@@ -64,7 +71,11 @@ const start = async () => {
     })
 
     await app.listen(process.env.API_PORT)
-    winston.info(`Express server started. The ${process.env.API_NAME} API is listening at ${process.env.API_ROOT}`)
+    winston.info(
+      `Express server started. The ${process.env.API_NAME} API is listening at ${
+        process.env.API_ROOT
+      }`
+    )
 
     return app
   } catch (inner) {

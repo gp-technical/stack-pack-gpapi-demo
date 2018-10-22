@@ -1,6 +1,14 @@
 {
-	"presets": [
-    "latest",
-    "stage-2"
-	]
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        },
+        "useBuiltIns": true
+      }
+    ],
+    ["stage-2"]
+  ]
 }

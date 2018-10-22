@@ -2,12 +2,9 @@ import 'babel-polyfill'
 import gpapi from 'stack-pack-gpapi'
 import express from './express'
 import winston from 'winston'
-import dotenv from 'dotenv'
 import util from 'util'
 
-dotenv.config()
 winston.info('---------------------------')
-
 ;(async () => {
   try {
     // Starts an HTTPS express server

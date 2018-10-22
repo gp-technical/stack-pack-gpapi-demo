@@ -11,38 +11,41 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "start": "env-cmd .env babel-node src/index.js --silent"
+    "lint": "sp-lint",
+    "precommit": "sp-lint-staged",
+    "start:debug": "nodemon --exec yarn start --inspect --source-maps inline",
+    "start": "env-cmd .env babel-node src/index.js --silent",
+    "production": "babel --presets env,stage-2 src --out-dir /build"
   },
-  "swapDep": {
-    "local": {
-      "dep": {
-        "stack-pack-gpapi": "file:../stack-pack/stack-pack-gpapi"
-      },
-      "dev": {}
-    },
-    "published": {
-      "dep": {
-        "stack-pack-gpapi": "1.1.8"
-      },
-      "dev": {}
-    }
+  "standard-engine": "@gp-technical/stack-pack-standard",
+  "nodemonConfig": {
+    "watch": [
+      "src",
+      ".env",
+      "node_modules/@gp-technical"
+    ],
+    "ignoreRoot": [
+      "yarn.lock",
+      "package.json"
+    ]
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "body-parser": "^1.15.2",
-    "dotenv": "^4.0.0",
+    "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
-    "stack-pack-gpapi": "1.1.8",
-    "winston": "^2.3.1"
+    "le_node": "^1.7.0",
+    "sparkpost": "^2.1.2",
+    "stack-pack-gpapi": "2.1.1",
+    "unirest": "^0.5.1"
   },
   "devDependencies": {
+    "@gp-technical/stack-pack-standard": "^2.3.5",
     "babel-cli": "^6.16.0",
-    "babel-core": "^6.16.0",
-    "babel-eslint": "^7.0.0",
-    "babel-preset-latest": "^6.16.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.16.0",
-    "env-cmd": "^5.0.0",
-    "eslint": "^3.6.1",
-    "eslint-config-standard": "^6.1.0",
-    "eslint-plugin-standard": "^2.0.0"
+    "env-cmd": "^8.0.0",
+    "nodemon": "^1.17.5"
   }
 }
