@@ -34,13 +34,10 @@
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
-    "le_node": "^1.7.0",
-    "sparkpost": "^2.1.2",
-    "stack-pack-gpapi": "2.1.1",
-    "unirest": "^0.5.1"
+    "stack-pack-gpapi": "2.1.1"
   },
   "devDependencies": {
-    "@gp-technical/stack-pack-standard": "^2.3.5",
+    "@gp-technical/stack-pack-standard": "^2.3.6",
     "babel-cli": "^6.16.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
