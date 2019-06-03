@@ -34,7 +34,7 @@
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
-    "stack-pack-gpapi": "2.1.1"
+    "stack-pack-gpapi": "2.4.1"
   },
   "devDependencies": {
     "@gp-technical/stack-pack-standard": "^2.3.6",
