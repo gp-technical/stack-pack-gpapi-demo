@@ -12,7 +12,6 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "sp-lint",
-    "precommit": "sp-lint-staged",
     "start:debug": "nodemon --exec yarn start --inspect --source-maps inline",
     "start": "env-cmd .env babel-node src/index.js --silent",
     "production": "babel --presets env,stage-2 src --out-dir /build"
@@ -37,12 +36,13 @@
     "stack-pack-gpapi": "2.4.1"
   },
   "devDependencies": {
-    "@gp-technical/stack-pack-standard": "^2.3.6",
+    "@gp-technical/eslint-config-stack": "^1.0.0",
+    "@gp-technical/stack-pack-standard": "^3.1.0",
     "babel-cli": "^6.16.0",
     "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.16.0",
-    "env-cmd": "^8.0.0",
-    "nodemon": "^1.17.5"
+    "env-cmd": "^8.0.2",
+    "nodemon": "^1.18.7"
   }
 }
