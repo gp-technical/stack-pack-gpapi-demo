@@ -32,7 +32,7 @@
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
-    "stack-pack-gpapi": "2.4.1"
+    "stack-pack-gpapi": "2.4.2"
   },
   "devDependencies": {
     "@gp-technical/eslint-config-stack": "^1.0.0",

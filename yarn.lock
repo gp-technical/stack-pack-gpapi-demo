@@ -117,12 +117,12 @@
     lint-staged "^8.1.5"
     prettier "^1.16.4"
 
-"@gp-technical/stack-pack-util@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@gp-technical/stack-pack-util/-/stack-pack-util-2.0.1.tgz#573755bb4dfd97e1a5c2190d39c9b418eadd2d0e"
-  integrity sha512-G5+BCllBdaB9lCW5Tp/cdYkLjhFU29YW+KrAosEAMfnow6xthxQO9D3AIbrKhQ2L7mdM0lrtAcqn6cfgA3XaSw==
+"@gp-technical/stack-pack-util@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@gp-technical/stack-pack-util/-/stack-pack-util-3.1.0.tgz#77af14ecf4d7caa497c7fc457fa4568b9dafd61e"
+  integrity sha512-33201RID/095Ei0LFDByV4dnPXrO1halU1AC7K0It0nQq/3IQTwrdioKORa197rG9+U3i+R+Svq5jfTN2Ii3EA==
   dependencies:
-    le_node "^1.7.1"
+    le_node "^1.8.0"
     winston "2.4.4"
 
 "@samverschueren/stream-to-observable@^0.3.0":
@@ -3176,7 +3176,7 @@ latest-version@^3.0.0:
   dependencies:
     package-json "^4.0.0"
 
-le_node@^1.7.1:
+le_node@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/le_node/-/le_node-1.8.0.tgz#07b1ae7d0c8f36a8e9892650c25f711b8a403f83"
   integrity sha512-NXzjxBskZ4QawTNwlGdRG05jYU0LhV2nxxmP3x7sRMHyROV0jPdyyikO9at+uYrWX3VFt0Y/am11oKITedx0iw==
@@ -4719,12 +4719,12 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
-stack-pack-gpapi@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/stack-pack-gpapi/-/stack-pack-gpapi-2.4.1.tgz#7296b079e3bd33ba3191674452ca7f5cceb67c01"
-  integrity sha512-m2KclCAzu4r0+Xefz74K/B43jlOaNwyiMxWOwBiPFIB+UogWxSk5rt51iWxRNFP5SrmASVCgBj1waz2OrEch2g==
+stack-pack-gpapi@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/stack-pack-gpapi/-/stack-pack-gpapi-2.4.2.tgz#40d8dc0dc00327eb1b0a6744a337416afc579eb4"
+  integrity sha512-1fflGaKgaRZft6YKs+E0IVDv3IbvSSre53D9om0phOTafALcZgYJx2hBh2ghu/lVMmT4Ec8h1bgt6CoS48Osvg==
   dependencies:
-    "@gp-technical/stack-pack-util" "^2.0.1"
+    "@gp-technical/stack-pack-util" "^3.1.0"
     stack-pack-request "2.3.1"
 
 stack-pack-request@2.3.1:
